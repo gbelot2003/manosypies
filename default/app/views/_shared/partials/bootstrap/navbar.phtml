@@ -1,0 +1,23 @@
+<nav id="navbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=""><?php print $SiteName ?></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navigationbar">
+            <ul class="nav navbar-nav">
+				<li class="<?php print $status['inicio'] ?>"><?php print Html::link("", "Inicio") ?></li>
+                <li class="<?php print $status['manicure'] ?>"><?php print Html::link("manicure", "Manicure") ?></li>
+                <li class="<?php print $status['pedicure'] ?>"><?php print Html::link("pedicure", "Pedicure") ?></li>
+                <li class="<?php print $status['faciales'] ?>"><?php print Html::link("faciales", "Faciales") ?></li>    
+                <li class="<?php print $status['reflexologia'] ?>"><?php print Html::link("reflexologia", "Refrexologia") ?></li>
+				<li class="<?php print $status['contacto'] ?>"><?php print Html::link("contactenos", "Contactenos") ?></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
